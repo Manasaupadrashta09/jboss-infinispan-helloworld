@@ -59,14 +59,35 @@
    </dependencyManagement>
 
    <dependencies>
-		<!-- Infinispan/DataGrid -->
+		<!-- Infinispan/DataGrid from EAP6 -->
+		<!-- 
 		<dependency>
 			<groupId>org.infinispan</groupId>
 			<artifactId>infinispan-core</artifactId>
 			<version>5.1.4.FINAL-redhat-1</version>
-			<scope>provided</scope>
+			<scope>runtime</scope>
 		</dependency>
+		 -->
 
+		<!-- Infinispan/DataGrid from JDG -->
+		<!--  
+		<dependency>
+			<groupId>org.infinispan</groupId>
+			<artifactId>infinispan-core</artifactId>
+			<version>5.1.5.FINAL-redhat-1</version>
+			<scope>runtime</scope>
+		</dependency>
+		 -->
+		 
+		<!-- Infinispan/DataGrid from Maven Central -->
+		<dependency>
+			<groupId>org.infinispan</groupId>
+			<artifactId>infinispan-core</artifactId>
+			<version>5.1.4.FINAL</version>
+			<scope>runtime</scope>
+		</dependency>
+		
+		 
 		<!-- Import the Servlet API, we use provided scope as the API is included 
 			in JBoss AS 7 -->
 		<dependency>
